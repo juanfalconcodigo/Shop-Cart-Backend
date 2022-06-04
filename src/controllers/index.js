@@ -1,6 +1,6 @@
-const { getUserSystem, postUserSytem, putUserSytem, deleteUserSytem } = require('./user.controller');
+const { getUserSystem, postUserSytem, putUserSytem, deleteUserSytem, loginUserSystem } = require('./user.controller');
 const { createUserPlatform, loginUserPlatform } = require('./user-platform.controller');
-const { getProducts } = require('./product.controller');
+const { getProducts, postProduct } = require('./product.controller');
 module.exports = {
     getUserSystem,
     postUserSytem,
@@ -8,5 +8,7 @@ module.exports = {
     deleteUserSytem,
     createUserPlatform,
     loginUserPlatform,
-    getProducts
+    getProducts,
+    loginUserSystem,
+    postProduct
 }
