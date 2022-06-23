@@ -4,7 +4,9 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const cors = require('cors');
 const app = express();
-require('dotenv').config({ path: path.join(__dirname, '../.env') });
+if (process.env.NODE_ENV != 'production') {
+    require('dotenv').config({ path: path.join(__dirname, '../../.env') });
+}
 const PORT = process.env.PORT;
 const http = require('http');
 const server = http.createServer(app);

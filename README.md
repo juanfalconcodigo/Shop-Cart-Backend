@@ -34,7 +34,7 @@ node src/index.js
 - added Procfile and engines in package.json
     ```
     Procfile
-    web: node src/index.js
+    web: node app/src/index.js
     ```
 
     ```
